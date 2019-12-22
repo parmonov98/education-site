@@ -1,0 +1,599 @@
+:root{
+    --main-menu-cl: #eeeeeea0;
+    --main-menu-h-cl: #eee;
+}
+body{
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a, body{
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header.head{
+    box-sizing: border-box;
+    background: url("./imgs/slider-bg.png") no-repeat;
+    background-size: cover;
+    min-height: 680px;
+    margin-bottom: 0px;
+}
+
+header.head::before{
+    background-color: #000000d0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 620px;
+    top: 60px;
+    left: 0;
+    position: absolute;
+
+}
+div.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav.navigation {
+    background-color: #000000d0;
+    padding: 28px 0 0 0;    
+}
+nav.navigation > div.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav  div.logo a img{
+    margin: 0 10px;
+    display: inline-block;
+}
+nav  div.logo > a{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    color: var(--main-menu-h-cl);
+    font-weight: 700;
+}
+
+nav  ul.menu{
+    display: flex;
+    float: right;
+    margin: 0;
+    list-style: none;
+}
+
+
+nav  ul.menu > li {
+    margin: 0 24px ;
+}
+
+nav  ul.menu > li > a{
+    font-size: 0.91rem;
+    color: var(--main-menu-cl);
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+nav  ul.menu > li:hover > a{
+    color: var(--main-menu-h-cl);
+}
+
+/* slider */
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-slide > *{
+    transition: 0.3s;
+}
+.swiper-slide {
+    text-align: center;
+} 
+.swiper-slide > p{    
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #999;
+    font-family: "Nunito  Sans";
+    
+}
+.swiper-slide > h1 {
+    margin-top: 120px;
+    text-align: center;
+}
+.swiper-slide > img{
+    width: 240px;
+    opacity: 0.8;
+}
+.swiper-slide:hover > p{
+    color: #fff;
+}
+.swiper-slide:hover > img{
+    opacity: 1;
+}
+.swiper-slide > h1 > a{
+    
+    font-size: 4.5rem;
+    font-size: 72px;
+    line-height: 72px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.clr{
+    clear: both;
+    display: contents;
+}
+/* process */
+.process{
+    height: 700px;
+    background-color: #fff;   
+}
+
+
+.process > div.wrap {
+    display: flex;
+    padding-top: 50px;
+}
+
+.process > div.wrap > div.right{
+    padding: 30px 0 0 50px;
+}
+.process > div.wrap > div.right > div.item{
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.process > div.wrap > div.right > h2{
+    font-size: 36px;
+    line-height: 48px;
+    color: #1a1a1a;
+    font-family: "Nunito  Sans";
+}
+.process > div.wrap > div.right > p{
+    width: 450px;
+    height: 163px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+}
+.process > div.wrap > div.right > div.item{
+    font-size: 30px;
+    line-height: 42px;
+    color: #1a1a1a;
+    font-family: "Nunito  Sans";
+}
+.process > div.wrap > div.right > div.item > img{
+    width: 40px;
+    height: 40px;
+    margin: 0 30px 0 0;
+}
+
+/* features section */
+.features{
+    height: 1007px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.features h1{
+    font-size: 48px;
+    line-height: 60px;
+    color: #111611;
+    font-family: "Nunito  Sans";
+    text-align: center;
+}
+
+
+.features div.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features div.item{
+    width: calc(100% / 3 - 30px);
+    margin: 30px 15px;
+    text-align: center;
+
+}
+
+.features div.item > .circle-block > img{
+    color: #999;
+}
+.features div.item > .circle-block:hover{
+    background-color: #071733;
+}
+.features div.item > .circle-block{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 180px; 
+    width: 180px;
+    transition: 0.3s;
+}
+
+.features div.item > p{
+    width: 371px;
+    height: 102px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #484848;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.features div.item > h2{
+    font-size: 30px;
+    line-height: 36px;
+    color: #111111;
+    font-family: "Nunito  Sans";
+} 
+
+
+/* courses section */
+.courses {
+    background-color: #fff;
+    padding: 50px 0 50px 0;
+}
+
+.courses h1{
+    font-size: 48px;
+    color: #111111;
+    font-family: "Nunito  Sans";
+    text-align: center;
+}
+.courses div.items{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.courses div.items > div.item:hover{
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px #5c5;
+    transform: scale(1.005, 1.005);
+}
+.courses div.items > div.item{
+    width: calc(100% / 3 - 20px);
+    margin: 30px 10px;
+    text-align: center;
+    background-color: #d9f1e3;
+    box-shadow: 0 0 5px 3px #55995550;
+    transition: 0.3s;
+}
+
+
+.courses div.items > div.item img{
+    display: block;
+    width: 100%;
+}
+
+.courses div.items > div.item a.join{
+    padding: 10px 0px;
+    background-color: #5c5;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+.courses div.items > div.item a.join:hover{
+    background-color: #1c1;
+}
+
+
+.loadmore{
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-family: "Nunito  Sans";
+    text-decoration: none;
+}
+
+/* our teachers */
+
+.teachers{
+    background-color: bisque;
+    padding: 30px 0;
+
+}
+.teachers{
+
+}
+
+
+.teachers h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 60px;
+    color: #111111;
+    font-family: "Nunito  Sans";
+}
+.teachers div.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teachers div.item{
+    align-self: center;
+    display: flex;
+    width: calc(100% / 3 - 24px);
+    margin: 30px 10px;
+}
+
+.teachers div.item  h2, .teachers div.item  span{
+    margin: 5px 15px;
+}
+.teachers div.item  span{
+    background-color: #5c5;
+    color: #111;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* subjects */
+.subjects {
+    height: 1000px;
+    background-color: #f5f5f5;
+    padding: 30px 0;
+}
+
+.subjects h1{
+    font-size: 48px;
+    line-height: 60px;
+    color: #111111;
+    font-family: "Nunito  Sans";
+    text-align: center;
+
+}
+.subjects div.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subjects div.item:before{
+    background-color: #444444d0;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    transition: 0.3s;
+}
+
+.subjects div.item:after{
+    background-color: #222222f0;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    content: '';
+    transition: 0.3s;
+}
+
+.subjects div.item:nth-child(1){
+    background-image: url("./imgs/math.png");
+}
+
+.subjects div.item:nth-child(2){
+    background-image: url("./imgs/physics.jpg");
+}
+
+.subjects div.item:nth-child(3){
+    background-image: url("./imgs/chemistry.jpg");
+}
+.subjects div.item:nth-child(4){
+    background-image: url("./imgs/math.png");
+}
+
+.subjects div.item:nth-child(5){
+    background-image: url("./imgs/physics.jpg");
+}
+
+.subjects div.item:nth-child(6){
+    background-image: url("./imgs/chemistry.jpg");
+}
+.subjects div.item{
+    background-image: url("./imgs/math.png");
+    height: 370px;
+    width: 370px;
+    position: relative;
+    margin: 30px 15px;
+}
+.subjects div.item p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #444;
+}
+
+.subjects div.item:hover::after{
+    left: 100%;
+    width: 0;
+}
+.subjects div.item:hover::before
+{
+    
+    width: 0;
+}
+
+.subjects div.item a.enroll{
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: #3399ff;
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    bottom: 0px;
+}
+
+
+/* feedbacks */
+
+.feedbacks {
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+    padding-top: 30px;    
+}
+
+.feedbacks > div.wrap{
+    position: relative;
+    
+}
+
+.feedbacks div.slider > a{
+    background-color: #1c1;
+    color: #eee;
+}
+
+.feedbacks div.slides > div{
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.feedbacks div.slides > div img{
+    width: 120px;
+    height: 80px;
+    position: static;
+    display: block;
+    margin: 10px 0;
+}
+
+.feedbacks div.slides > div h2{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.feedbacks div.slides > div p{
+    font-size: 1.3rem;
+    width: 500px;
+    margin: 0;
+}
+.feedbacks div.slides > div h3{
+    margin: 0;
+    font-size: 1rem !important;
+}
+
+
+.subscribing {
+    padding: 30px;
+    background-color: #44444490
+}
+.subscribing > div.wrap form{
+    display: block;
+}
+
+.subscribing > div.wrap form input[type=email]{
+    padding: 15px 5px;
+    margin: 10px 5px 0 0;
+    border: 0;
+    font-size: 24px;
+    background-color: transparent;
+    display: inline-block;
+    border-bottom: 2px #444 solid;
+}
+.subscribing > div.wrap form input[type=submit]{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Nunito  Sans";
+    background-color: #27ae60;
+    padding: 15px 35px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+}
+.subscribing > div.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* contacts */
+
+.contacts div.items{
+    display: flex;
+}
+
+.contacts ul.items > li a:hover{
+    text-decoration: none;
+}
+.contacts ul.items > li a{
+    color: #000;
+}
+.contacts ul.items > li{
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+}
+
+.contacts ul.items > li >img{
+    margin: 5px 15px;
+}
+
+.contacts div.right form > div.gr{
+    margin: 25px 20px;
+}
+
+.contacts div.right > form textarea{
+    padding: 15px 5px;
+    margin: 10px 5px 0 0;
+    font-size: 24px;
+    background-color: transparent;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.contacts div.right > form input[type=submit]{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Nunito  Sans";
+    background-color: #27ae60;
+    padding: 15px 35px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+}
+.contacts div.right > form input{
+    padding: 15px 5px;
+    margin: 10px 5px 0 0;
+    border: 0;
+    font-size: 24px;
+    background-color: transparent;
+    display: inline-block;
+    border-bottom: 2px #444 solid;
+}
+
+
+/* footer */
+footer > .navigation{
+    padding: 30px 0;
+}
+
